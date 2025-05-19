@@ -1,7 +1,11 @@
 function Header() {
 
   return (
-    <p>Header</p>
+    <header className="header text-center">
+      <figure>
+        <img src="images/logo.png" className="logo" alt="Example" />
+      </figure>
+    </header>
   )
 }
 

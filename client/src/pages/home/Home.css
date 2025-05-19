@@ -1,0 +1,14 @@
+main.home-container .card {
+    cursor: pointer;
+}
+
+main.home-container .card .main-icons {
+    font-size: 40px;
+    color: #699f14;
+}
+
+main.home-container .card h2 {
+    font-size: 18px;
+    color: #000;
+    font-weight: 400;
+}
