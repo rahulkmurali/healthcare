@@ -1,0 +1,15 @@
+section {
+    padding: 4rem 0;
+}
+
+.login-bg {
+    background: url(../images/login-bg.jpg) no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+h2.login-h2 {
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+}
