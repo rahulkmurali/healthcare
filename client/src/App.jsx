@@ -6,6 +6,7 @@ import Users from "./pages/users/Users";
 import Tasks from "./pages/tasks/Tasks";
 import Error from "./pages/error/Error";
 import Login from './pages/login/Login';
+import ProtectedRoute from './routes/ProtectedRoute';
 
 const routes = [
   {
@@ -14,23 +15,43 @@ const routes = [
     children: [
       {
         path: '/',
-        element: <Home />
+        element: (
+          <ProtectedRoute>
+            <Home />
+          </ProtectedRoute>
+        )
       },
       {
         path: '/staffs',
-        element: <Users />
+        element: (
+          <ProtectedRoute>
+            <Users />
+          </ProtectedRoute>
+        )
       },
       {
         path: '/patients',
-        element: <Users />
+        element: (
+          <ProtectedRoute>
+            <Users />
+          </ProtectedRoute>
+        )
       },
       {
         path: '/leaves',
-        element: <Users />
+        element: (
+          <ProtectedRoute>
+            <Users />
+          </ProtectedRoute>
+        )
       },
       {
         path: '/tasks',
-        element: <Tasks />
+        element: (
+          <ProtectedRoute>
+            <Tasks />
+          </ProtectedRoute>
+        )
       }
       // {
       //   path: '/products/:productId',
